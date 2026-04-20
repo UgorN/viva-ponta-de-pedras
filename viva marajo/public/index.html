@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viva Ponta de Pedras | Portal de Entrada do Marajo Oriental</title>
+    <meta name="description" content="Descubra Ponta de Pedras, o portal de entrada do Marajo Oriental. Praias de agua doce, gastronomia amazonica, cultura e aventura na maior ilha fluviomarinha do mundo.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Video Background Global -->
+    <div class="video-bg-global">
+        <video autoplay muted loop playsinline id="bgVideo">
+            <source src="https://videos.pexels.com/video-files/3571264/3571264-uhd_2560_1440_30fps.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <svg class="logo-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+                Viva Ponta de Pedras
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#cultura">Cultura</a></li>
+                <li><a href="#pontos-turisticos">Pontos Turisticos</a></li>
+                <li><a href="#gastronomia">Gastronomia</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#hospedagem">Hospedagem</a></li>
+                <li><a href="#servicos">Servicos</a></li>
+                <li><a href="#como-chegar" class="nav-cta">Como Chegar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline class="hero-video" poster="https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=1920&q=80">
+                <source src="https://videos.pexels.com/video-files/3571264/3571264-uhd_2560_1440_30fps.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <span class="hero-badge">Ilha de Marajo, Para</span>
+            <h1 class="hero-title">Viva a essencia<br>do <span class="highlight">Marajo</span></h1>
+            <p class="hero-subtitle">Descubra Ponta de Pedras, onde o rio encontra a historia e a natureza revela seus segredos mais preservados</p>
+            <div class="hero-actions">
+                <a href="#pontos-turisticos" class="btn btn-primary">Explorar Destinos</a>
+                <a href="#como-chegar" class="btn btn-secondary">Como Chegar</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">1737</span>
+                    <span class="stat-label">Fundacao</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">44km</span>
+                    <span class="stat-label">de Belem</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">2h</span>
+                    <span class="stat-label">de Viagem</span>
+                </div>
+            </div>
+        </div>
+        <a href="#cultura" class="scroll-indicator">
+            <span>Descubra mais</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+        </a>
+    </section>
+
+    <!-- CULTURA LOCAL -->
+    <section class="section section-categoria" id="cultura">
+        <div class="section-bg-blur"></div>
+        <div class="container">
+            <div class="categoria-header">
+                <div class="categoria-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 6v6l4 2"/>
+                    </svg>
+                </div>
+                <span class="section-badge">Nossa Historia</span>
+                <h2 class="section-title">Cultura <span class="highlight">Local</span></h2>
+                <p class="section-description">De Itaguari a Ponta de Pedras - uma jornada atraves do tempo</p>
+            </div>
+            
+            <div class="cultura-grid">
+                <div class="cultura-card" data-aos="fade-up">
+                    <div class="cultura-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3>Origens Ancestrais</h3>
+                    <p>O territorio era originalmente ocupado pelos indios <strong>Guaianas</strong>, que utilizavam a rede de canais e o Rio Marajo-Acu como vias de subsistencia e comunicacao. O nome original da localidade, em lingua indigena, era <em>Itaguari</em>, que significa "rio do morador das pedras".</p>
+                </div>
+                <div class="cultura-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cultura-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 21h18M9 8h1M9 12h1M9 16h1M14 8h1M14 12h1M14 16h1M5 21V5a2 2 0 012-2h10a2 2 0 012 2v16"/>
+                        </svg>
+                    </div>
+                    <h3>Colonizacao Mercedaria</h3>
+                    <p>A transicao para o modelo de povoamento colonial ocorreu sob a influencia direta dos <strong>padres mercedarios</strong>, que se instalaram na regiao para realizar a catequizacao das populacoes indigenas e estabelecer as bases da administracao lusitana no Marajo.</p>
+                </div>
+                <div class="cultura-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cultura-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>Fundacao em 1737</h3>
+                    <p>A abundancia de formacoes rochosas na margem do rio - uma caracteristica geologica singular em uma regiao predominantemente sedimentar - levou a adocao do nome <strong>Ponta de Pedras</strong>. A fundacao formal consolidou-a como um dos centros urbanos mais antigos do arquipelago.</p>
+                </div>
+            </div>
+
+            <div class="cultura-destaque" data-aos="fade-up">
+                <div class="destaque-img">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Paisagem do Marajo">
+                    <div class="destaque-badge">
+                        <span class="badge-year">1696</span>
+                        <span class="badge-text">Primeiro engenho de cana-de-acucar da Ilha de Marajo</span>
+                    </div>
+                </div>
+                <div class="destaque-content">
+                    <h3>Lenda da Boiuna</h3>
+                    <p>A Ilha do Coati, um pequeno patrimonio natural de <strong>600 m2</strong> no meio do Rio Marajo-Acu, e envolta em misterio. A lenda local afirma que a ilha era o refugio da <em>"Cobra Grande"</em> ou Boiuna, uma entidade que podia se transformar em barcos iluminados para atrair viajantes para o fundo do rio.</p>
+                    <div class="destaque-tags">
+                        <span>Folclore</span>
+                        <span>Misticismo</span>
+                        <span>Tradicao Oral</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PONTOS TURISTICOS -->
+    <section class="section section-categoria" id="pontos-turisticos">
+        <div class="section-bg-blur"></div>
+        <div class="container">
+            <div class="categoria-header">
+                <div class="categoria-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                </div>
+                <span class="section-badge">Explore</span>
+                <h2 class="section-title">Pontos <span class="highlight">Turisticos</span></h2>
+                <p class="section-description">Praias de agua doce, ilhas misticas e trilhas ecologicas</p>
+            </div>
+
+            <div class="pontos-tabs">
+                <button class="tab-btn active" data-tab="praias">Praias</button>
+                <button class="tab-btn" data-tab="ilhas">Ilhas</button>
+                <button class="tab-btn" data-tab="ecoturismo">Ecoturismo</button>
+            </div>
+
+            <div class="tab-content active" id="praias">
+                <div class="pontos-grid">
+                    <div class="ponto-card featured" data-aos="fade-up">
+                        <div class="ponto-media">
+                            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80" alt="Praia da Mangabeira">
+                            <div class="ponto-overlay">
+                                <span class="ponto-distance">10km do centro</span>
+                            </div>
+                        </div>
+                        <div class="ponto-content">
+                            <h3>Praia da Mangabeira</h3>
+                            <p>Com <strong>2 quilometros de extensao</strong>, e marcada por uma orla urbanizada com chuveiros publicos, coqueirais densos e barracas padronizadas que servem peixe fresco e bebidas geladas.</p>
+                            <div class="ponto-features">
+                                <span>Coqueirais</span>
+                                <span>Estrutura</span>
+                                <span>Gastronomia</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ponto-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="ponto-media">
+                            <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800&q=80" alt="Praia Grande">
+                            <div class="ponto-overlay">
+                                <span class="ponto-distance">8km do centro</span>
+                            </div>
+                        </div>
+                        <div class="ponto-content">
+                            <h3>Praia Grande</h3>
+                            <p>Destaca-se pela vegetacao densa que a circunda. Abriga uma unidade comunitaria de beneficiamento de fibras vegetais, onde voce pode conhecer o processo de criacao de artesanato.</p>
+                            <div class="ponto-features">
+                                <span>Vegetacao</span>
+                                <span>Artesanato</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="ilhas">
+                <div class="pontos-grid">
+                    <div class="ponto-card" data-aos="fade-up">
+                        <div class="ponto-media mystic">
+                            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=80" alt="Ilha do Coati">
+                            <div class="ponto-overlay">
+                                <span class="ponto-badge mystic">Lenda da Boiuna</span>
+                            </div>
+                        </div>
+                        <div class="ponto-content">
+                            <h3>Ilha do Coati</h3>
+                            <p>Um pequeno patrimonio natural de <strong>600 m2</strong> no meio do Rio Marajo-Acu. A lenda local afirma que a ilha era o refugio da <em>"Cobra Grande"</em> ou Boiuna.</p>
+                            <div class="ponto-features">
+                                <span>Folclore</span>
+                                <span>Isolamento</span>
+                                <span>Misticismo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ponto-card featured" data-aos="fade-up" data-aos-delay="100">
+                        <div class="ponto-media">
+                            <img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=800&q=80" alt="Ilha de Santana">
+                            <div class="ponto-overlay">
+                                <span class="ponto-badge historic">Marco Historico</span>
+                            </div>
+                        </div>
+                        <div class="ponto-content">
+                            <h3>Ilha de Santana</h3>
+                            <p>Localizada a aproximadamente <strong>1 hora de lancha</strong> da cidade. Em <strong>1696</strong>, os padres mercedarios ergueram aqui o primeiro engenho de cana-de-acucar da Ilha de Marajo.</p>
+                            <div class="ponto-features">
+                                <span>Ruinas Coloniais</span>
+                                <span>Historia</span>
+                                <span>Tranquilidade</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="ecoturismo">
+                <div class="pontos-grid single">
+                    <div class="ponto-card eco featured" data-aos="fade-up">
+                        <div class="ponto-media">
+                            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80" alt="Trilha do Tartarugueiro">
+                            <div class="ponto-overlay">
+                                <span class="ponto-badge eco">Ecoturismo</span>
+                            </div>
+                        </div>
+                        <div class="ponto-content">
+                            <h3>Trilha do Tartarugueiro</h3>
+                            <p>Para os adeptos de caminhadas ecologicas, a comunidade de Tartarugueiro oferece trilhas em meio a mata densa. O percurso permite a observacao de <strong>arvores de madeira de lei</strong>, especies frutiferas nativas e aves amazonicas.</p>
+                            <div class="eco-highlights">
+                                <div class="eco-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    </svg>
+                                    Flora Nativa
+                                </div>
+                                <div class="eco-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                                    </svg>
+                                    Trilhas Guiadas
+                                </div>
+                                <div class="eco-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+                                    </svg>
+                                    Ruinas Historicas
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GASTRONOMIA -->
+    <section class="section section-categoria" id="gastronomia">
+        <div class="section-bg-blur"></div>
+        <div class="container">
+            <div class="categoria-header">
+                <div class="categoria-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3"/>
+                    </svg>
+                </div>
+                <span class="section-badge">Sabores</span>
+                <h2 class="section-title">Gastronomia <span class="highlight">Local</span></h2>
+                <p class="section-description">Sabores autenticos da Amazonia marajoara</p>
+            </div>
+
+            <div class="gastro-carousel" data-aos="fade-up">
+                <div class="carousel-container">
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="gastro-card">
+                            <div class="gastro-img">
+                                <img src="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=600&q=80" alt="Acai">
+                            </div>
+                            <div class="gastro-content">
+                                <span class="gastro-tag">Especialidade</span>
+                                <h3>Acai Marajoara</h3>
+                                <p>O acai de Ponta de Pedras e considerado um dos mais puros e saborosos da regiao. Servido grosso, com farinha de tapioca e peixe frito.</p>
+                            </div>
+                        </div>
+                        <div class="gastro-card">
+                            <div class="gastro-img">
+                                <img src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=600&q=80" alt="Queijo do Marajo">
+                            </div>
+                            <div class="gastro-content">
+                                <span class="gastro-tag">Tradicional</span>
+                                <h3>Queijo do Marajo</h3>
+                                <p>Patrimonio gastronomico brasileiro, o queijo do Marajo e produzido artesanalmente com leite de bufala. Disponivel nas versoes manteiga e requeijao.</p>
+                            </div>
+                        </div>
+                        <div class="gastro-card">
+                            <div class="gastro-img">
+                                <img src="https://images.unsplash.com/photo-1544943910-4c1dc44aab44?w=600&q=80" alt="Tambaqui">
+                            </div>
+                            <div class="gastro-content">
+                                <span class="gastro-tag">Peixes</span>
+                                <h3>Tambaqui Assado</h3>
+                                <p>Peixe amazonico de carne firme e saborosa, assado na brasa e servido com vinagrete de jambu e farinha duva.</p>
+                            </div>
+                        </div>
+                        <div class="gastro-card">
+                            <div class="gastro-img">
+                                <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=600&q=80" alt="File Marajoara">
+                            </div>
+                            <div class="gastro-content">
+                                <span class="gastro-tag">Bufalo</span>
+                                <h3>File Marajoara</h3>
+                                <p>Carne de bufalo grelhada, servida com queijo do Marajo derretido e molho de ervas regionais. Uma experiencia unica.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn prev" id="prevBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <button class="carousel-btn next" id="nextBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="restaurantes-box" data-aos="fade-up">
+                <h3>Onde Comer</h3>
+                <div class="restaurantes-grid">
+                    <div class="restaurante-item">
+                        <div class="restaurante-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Restaurante do Ze</h4>
+                            <p>Especializado em peixes regionais</p>
+                        </div>
+                    </div>
+                    <div class="restaurante-item">
+                        <div class="restaurante-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Bar e Restaurante Tropical</h4>
+                            <p>Culinaria tipica marajoara</p>
+                        </div>
+                    </div>
+                    <div class="restaurante-item">
+                        <div class="restaurante-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Batedores de Acai</h4>
+                            <p>Acai puro batido na hora</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EVENTOS -->
+    <section class="section section-categoria section-eventos" id="eventos">
+        <div class="section-bg-blur"></div>
+        <div class="container">
+            <div class="categoria-header">
+                <div class="categoria-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                        <line x1="16" y1="2" x2="16" y2="6"/>
+                        <line x1="8" y1="2" x2="8" y2="6"/>
+                        <line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                </div>
+                <span class="section-badge">Calendario</span>
+                <h2 class="section-title"><span class="highlight">Eventos</span></h2>
+                <p class="section-description">Celebracoes que movimentam a cidade</p>
+            </div>
+
+            <div class="evento-destaque" data-aos="zoom-in">
+                <div class="evento-destaque-content">
+                    <span class="evento-data">26 a 28 de Setembro de 2025</span>
+                    <h3>Festival do Acai</h3>
+                    <p>O maior evento cultural de Ponta de Pedras celebra o fruto simbolo da regiao. Durante tres dias, a cidade se transforma em uma grande festa com shows musicais, concursos, feira de artesanato e muita gastronomia.</p>
+                    <div class="evento-highlights">
+                        <div class="highlight-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 18V5l12-2v13"/>
+                                <circle cx="6" cy="18" r="3"/>
+                                <circle cx="18" cy="16" r="3"/>
+                            </svg>
+                            Shows Musicais
+                        </div>
+                        <div class="highlight-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+                            </svg>
+                            Concursos
+                        </div>
+                        <div class="highlight-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/>
+                            </svg>
+                            Feiras
+                        </div>
+                    </div>
+                </div>
+                <div class="evento-destaque-visual">
+                    <div class="evento-badge-large">
+                        <span class="badge-mes">SET</span>
+                        <span class="badge-dia">26-28</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eventos-grid" data-aos="fade-up">
+                <div class="evento-card">
+                    <div class="evento-mes">JAN</div>
+                    <h4>Festividade de Sao Sebastiao</h4>
+                    <p>Padroeiro da cidade, celebrado com procissao e arraial</p>
+                </div>
+                <div class="evento-card">
+                    <div class="evento-mes">JUN</div>
+                    <h4>Festa Junina</h4>
+                    <p>Tradicional festa com quadrilhas, comidas tipicas e fogueira</p>
+                </div>
+                <div class="evento-card">
+                    <div class="evento-mes">OUT</div>
+                    <h4>Cirio de Nazare</h4>
+                    <p>Manifestacao religiosa com procissao fluvial</p>
+                </div>
+            </div>
+
+            <div class="quando-visitar" data-aos="fade-up">
+                <h3>Quando Visitar</h3>
+                <div class="clima-grid">
+                    <div class="clima-card">
+                        <div class="clima-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 17.58A5 5 0 0018 8h-1.26A8 8 0 104 16.25"/>
+                                <path d="M8 17h.01M8 21h.01M12 17h.01M12 21h.01M16 17h.01M16 21h.01"/>
+                            </svg>
+                        </div>
+                        <h4>Inverno Amazonico</h4>
+                        <span class="clima-meses">Janeiro a Junho</span>
+                        <p>Periodo de chuvas intensas. Rios cheios e vegetacao exuberante. Ideal para quem busca paisagens verdejantes.</p>
+                    </div>
+                    <div class="clima-card destaque">
+                        <div class="clima-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="5"/>
+                                <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                            </svg>
+                        </div>
+                        <span class="recomendado">Recomendado</span>
+                        <h4>Verao Amazonico</h4>
+                        <span class="clima-meses">Julho a Dezembro</span>
+                        <p>Menos chuvas e praias mais acessiveis. Melhor epoca para banhos e passeios de barco. Festival do Acai em setembro.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOSPEDAGEM -->
+    <section class="section section-categoria" id="hospedagem">
+        <div class="section-bg-blur"></div>
+        <div class="container">
+            <div class="categoria-header">
+                <div class="categoria-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M3 21h18M3 7v1a3 3 0 006 0V7m0 1a3 3 0 006 0V7m0 1a3 3 0 006 0V7H3l2-4h14l2 4M5 21V10.85M19 21V10.85"/>
+                    </svg>
+                </div>
+                <span class="section-badge">Onde Ficar</span>
+                <h2 class="section-title"><span class="highlight">Hospedagem</span></h2>
+                <p class="section-description">Opcoes de acomodacao para sua estadia</p>
+            </div>
+
+            <div class="hospedagem-destaque" data-aos="fade-up">
+                <div class="hospedagem-img">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80" alt="Pousada Espaco Marajoara">
+                    <div class="hospedagem-badge">Em Destaque</div>
+                </div>
+                <div class="hospedagem-content">
+                    <h3>Pousada Espaco Marajoara</h3>
+                    <p>Principal opcao de hospedagem da cidade, a Pousada Espaco Marajoara oferece quartos confortaveis com ar-condicionado, cafe da manha regional incluso e atendimento personalizado.</p>
+                    <div class="hospedagem-amenities">
+                        <div class="amenity">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            Ar-condicionado
+                        </div>
+                        <div class="amenity">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            Cafe da Manha
+                        </div>
+                        <div class="amenity">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            Wi-Fi
+                        </div>
+                        <div class="amenity">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            Estacionamento
+                        </div>
+                    </div>
+                    <div class="hospedagem-contact">
+                        <a href="tel:+5591999999999" class="contact-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                            Reservar
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hospedagem-tips" data-aos="fade-up">
+                <h3>Dicas de Viagem</h3>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <h4>Repelente</h4>
+                        <p>Leve repelente para mosquitos, especialmente no fim de tarde</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="5"/>
+                                <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42"/>
+                            </svg>
+                        </div>
+                        <h4>Protetor Solar</h4>
+                        <p>O sol amazo nico e forte, use protetor fator 50+</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                                <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/>
+                            </svg>
+                        </div>
+                        <h4>Dinheiro</h4>
+                        <p>Leve dinheiro em especie, nem todos aceitam cartao</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <h4>Guia Local</h4>
+                        <p>Contrate guias locais para conhecer os melhores pontos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICOS ESSENCIAIS -->
+    <section class="section section-categoria" id="servicos">
+        <div class="section-bg-blur"></div>
+        <div class="container">
+            <div class="categoria-header">
+                <div class="categoria-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                    </svg>
+                </div>
+                <span class="section-badge">Importante</span>
+                <h2 class="section-title">Servicos <span class="highlight">Essenciais</span></h2>
+                <p class="section-description">Informacoes uteis para sua viagem</p>
+            </div>
+
+            <div class="servicos-grid" data-aos="fade-up">
+                <div class="servico-card">
+                    <div class="servico-icon saude">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                        </svg>
+                    </div>
+                    <h3>Saude</h3>
+                    <div class="servico-info">
+                        <p><strong>Hospital Municipal de Ponta de Pedras</strong></p>
+                        <p>Rua Principal, Centro</p>
+                        <p class="telefone">(91) 3756-1234</p>
+                    </div>
+                    <div class="servico-info">
+                        <p><strong>UBS - Unidade Basica de Saude</strong></p>
+                        <p>Atendimento 24h para emergencias</p>
+                    </div>
+                </div>
+
+                <div class="servico-card">
+                    <div class="servico-icon seguranca">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3>Seguranca</h3>
+                    <div class="servico-info">
+                        <p><strong>Delegacia de Policia Civil</strong></p>
+                        <p>Av. Marechal Rondon, Centro</p>
+                        <p class="telefone">(91) 3756-5678</p>
+                    </div>
+                    <div class="servico-info">
+                        <p><strong>Policia Militar</strong></p>
+                        <p class="telefone">190</p>
+                    </div>
+                </div>
+
+                <div class="servico-card">
+                    <div class="servico-icon banco">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3"/>
+                        </svg>
+                    </div>
+                    <h3>Banco</h3>
+                    <div class="servico-info">
+                        <p><strong>Banco do Brasil</strong></p>
+                        <p>Agencia com caixa eletronico 24h</p>
+                        <p>Rua 7 de Setembro, Centro</p>
+                    </div>
+                    <div class="servico-info">
+                        <p><strong>Loteria</strong></p>
+                        <p>Correspondente bancario para saques</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="emergencia-box" data-aos="fade-up">
+                <div class="emergencia-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                    </svg>
+                </div>
+                <div class="emergencia-content">
+                    <h4>Numeros de Emergencia</h4>
+                    <div class="emergencia-numeros">
+                        <span><strong>SAMU:</strong> 192</span>
+                        <span><strong>Bombeiros:</strong> 193</span>
+                        <span><strong>Policia:</strong> 190</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMO CHEGAR -->
+    <section class="section section-categoria section-como-chegar" id="como-chegar">
+        <div class="section-bg-blur"></div>
+        <div class="container">
+            <div class="categoria-header">
+                <div class="categoria-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M3 17l6-6 4 4 8-8"/>
+                        <path d="M14 7h7v7"/>
+                    </svg>
+                </div>
+                <span class="section-badge">Logistica</span>
+                <h2 class="section-title">Como <span class="highlight">Chegar</span></h2>
+                <p class="section-description">Sua jornada comeca em Belem, atravessando a majestosa Baia do Marajo</p>
+            </div>
+
+            <div class="acesso-grid" data-aos="fade-up">
+                <div class="acesso-card principal">
+                    <div class="acesso-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M2 20h20M4 20V10l8-6 8 6v10"/>
+                        </svg>
+                    </div>
+                    <span class="acesso-badge">Partida</span>
+                    <h3>Terminal Hidroviario de Belem</h3>
+                    <p>Galpao Luiz Rebelo Neto - Sua aventura comeca aqui</p>
+                </div>
+                <div class="acesso-card">
+                    <div class="acesso-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 17l6-6 4 4 8-8"/>
+                            <path d="M14 7h7v7"/>
+                        </svg>
+                    </div>
+                    <h3>Lanchas Rapidas</h3>
+                    <p><strong>Master Motors</strong></p>
+                    <p>Expresso Golfinho e Expresso Golfinho I</p>
+                </div>
+                <div class="acesso-card">
+                    <div class="acesso-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3>Tempo de Viagem</h3>
+                    <p class="destaque-valor">~2 horas</p>
+                    <p>Atravessando a Baia do Marajo</p>
+                </div>
+                <div class="acesso-card">
+                    <div class="acesso-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+                        </svg>
+                    </div>
+                    <h3>Tarifa Media</h3>
+                    <p class="destaque-valor">R$ 61,17</p>
+                    <p>Por trecho</p>
+                </div>
+            </div>
+
+            <div class="horarios-box" data-aos="fade-up">
+                <h3>Horarios de Partida de Belem</h3>
+                <div class="horarios-grid">
+                    <div class="horario-item">
+                        <span class="horario-dia">Segunda</span>
+                        <span class="horario-hora">08:30</span>
+                    </div>
+                    <div class="horario-item">
+                        <span class="horario-dia">Terca</span>
+                        <span class="horario-hora">08:30</span>
+                    </div>
+                    <div class="horario-item">
+                        <span class="horario-dia">Quarta</span>
+                        <span class="horario-hora">09:00</span>
+                    </div>
+                    <div class="horario-item">
+                        <span class="horario-dia">Quinta</span>
+                        <span class="horario-hora">08:30</span>
+                    </div>
+                    <div class="horario-item">
+                        <span class="horario-dia">Sexta</span>
+                        <span class="horario-hora">08:30</span>
+                    </div>
+                    <div class="horario-item">
+                        <span class="horario-dia">Sabado</span>
+                        <span class="horario-hora">09:00</span>
+                    </div>
+                    <div class="horario-item disabled">
+                        <span class="horario-dia">Domingo</span>
+                        <span class="horario-hora">-</span>
+                    </div>
+                </div>
+                <div class="horarios-alerta">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 8v4M12 16h.01"/>
+                    </svg>
+                    <p><strong>Atencao:</strong> Nao ha transporte de lancha regular entre Belem e Marajo aos domingos, nem venda de bilhetes neste dia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-bg-blur"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                        Viva Ponta de Pedras
+                    </a>
+                    <p>Portal de entrada do Marajo Oriental. Descubra a essencia da Amazonia marajoara.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegacao</h4>
+                    <ul>
+                        <li><a href="#cultura">Cultura Local</a></li>
+                        <li><a href="#pontos-turisticos">Pontos Turisticos</a></li>
+                        <li><a href="#gastronomia">Gastronomia</a></li>
+                        <li><a href="#eventos">Eventos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Informacoes</h4>
+                    <ul>
+                        <li><a href="#hospedagem">Hospedagem</a></li>
+                        <li><a href="#servicos">Servicos Essenciais</a></li>
+                        <li><a href="#como-chegar">Como Chegar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p>Prefeitura Municipal de Ponta de Pedras</p>
+                    <p>Ponta de Pedras - PA</p>
+                    <p>CEP: 68830-000</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2025 Viva Ponta de Pedras. Desenvolvido com amor pela Amazonia.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
